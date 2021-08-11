@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: 0;
 }
-/* Single Character css*/
 body{
     background: rgb(75,78,162);
     background: linear-gradient(90deg, rgba(75,78,162,0.9) 0%, rgba(225,68,68,0.95) 100%); 
@@ -19,6 +18,8 @@ hr{
     margin: 0.5rem;
     color: white;
 }
+
+/* Single Character css*/
 .single__character{
     margin: 0rem 3rem 3rem 3rem;
     padding: 2rem 2.5rem 2rem 2.5rem;
@@ -75,6 +76,8 @@ img{
     flex-direction: row;
     padding-top: 5rem;
 }
+/*Fin signe Character css*/
+
 #update{
     margin: 1rem ;
     padding: 0.5rem;
@@ -97,4 +100,3 @@ img{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
-/*Fin signe Character css*/

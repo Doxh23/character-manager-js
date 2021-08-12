@@ -15,13 +15,23 @@
     //btn update js
     document.getElementById("update").addEventListener("click", () => {
         let a = document.querySelector("a");
-        a.href = `Pages/manager-character.html#${character[0]}`;
+        a.href = `pages/manager-character.html#${character[0].id}`;
         console.log(a.href);
     }); // à vérifier lors que le JS du manager page est réalisé
 
     //btn delete js
-    document.getElementById("delete").addEventListener("click", () => {
+    document.getElementById("delete").addEventListener("click", async () => {
 
-        console.log('hello id');
+            if(confirm(`Do you want to delete it ?`)){
+                let fetch = fetch(`https://character-database.becode.xyz/characters/${character.id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }); 
+                console.log(fetch);
+            }else{
+                alert(`This character isn't delete of your API`);
+            }
     });
 })();

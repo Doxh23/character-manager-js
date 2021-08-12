@@ -31,7 +31,7 @@ datas.forEach(obj => {
     clon.querySelector("img").src= `data:image/png;base64,${obj.image}`
     clon.querySelector("p").innerHTML= obj.shortDescription
     clon.querySelector("h3").innerHTML= obj.name
-    clon.querySelector("a").href = `/character-manager-js/pages/single-character.html#${obj.id}`
+    clon.querySelector("a").href = `/character-manager-js/pages/single-character.html?${obj.id}`
     target.appendChild(clon)
 
 })

@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background: rgb(75,78,162);
+    background: linear-gradient(90deg, rgba(66, 67, 97, 0.9) 0%, rgba(225,68,68,0.95) 100%); 
+    background-size: 200%;
+    background-position: 50% 15% ;
+}
+header{
+    margin: 2.5rem 3rem 2rem 3rem;
+    color: white;
+    font-family:'Permanent Marker', cursive;
+}
+hr{
+    margin: 0.5rem;
+    color: white;
+}
+
+/* Single Character css*/
+.single__character{
+    margin: 2rem 3.1rem 5rem 3.1rem;
+    background-color: #363333;
+    border-radius: 10px;
+    display: flexbox;
+}
+.single__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    padding-top: 4rem;
+}
+img{
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    object-position: center;
+} /* works also for the img in the manager character page*/
+#single__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family:'Permanent Marker', cursive;
+    color: white;
+}
+#single__preface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1rem 1rem 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1rem;
+    opacity: 60%;
+}
+#single__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    opacity: 75%;
+}
+/*End of single Character CSS*/
+
+/*Manager character CSS*/
+.manager{
+    margin: 2rem 3.1rem 5rem 3.1rem;
+    background-color: #363333;
+    border-radius: 10px;
+    display: flexbox;
+}
+.manager__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    padding-top: 4rem;
+}
+.manager__img img, button{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.manager__img button{
+    max-width: 6rem;
+    margin: auto;
+    padding-top: 1rem;
+    border: none;
+    background-color: #363333;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+}
+.manager__input{
+    display: flex;
+    flex-direction: column;
+    
+}
+#manager__name, #manager__preface, #manager__text{
+    margin: 0.3rem 2rem 0.3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    color: white;
+}
+#manager__name{
+    padding: 1.1rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.1rem;
+}
+#manager__preface{
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+#manager__text{
+    text-align: left;
+    padding: 10rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+/*End of Manager character CSS */
+
+/* CSS btn delete and update/save*/
+.single__btn, .manager__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+#update{
+    margin: 1.5rem ;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-color: #4B7CFB;
+    border-radius: 10px;
+    background-color: #4B7CFB;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+#update a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+#delete{
+    margin:1rem 1rem 1rem 0rem;
+    padding: 0.5rem;
+    background-color: #363333;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #BF3A30;
+    color: #BF3A30;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}

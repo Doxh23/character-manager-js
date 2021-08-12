@@ -5,8 +5,10 @@
 }
 
 body{
-    background: linear-gradient(to right,#4B4EA2 ,#E14444 );
-    background-size: cover;
+    background: rgb(75,78,162);
+    background: linear-gradient(90deg, rgba(66, 67, 97, 0.9) 0%, rgba(225,68,68,0.95) 100%); 
+    background-size: 200%;
+    background-position: 50% 15% ;
 
     
 }
@@ -66,7 +68,7 @@ hr {
 }
 .container {
     display: grid;
-grid-template-columns: repeat(4,265px);
+grid-template-columns: repeat(auto-fit,265px);
 grid-gap: 100px;
 grid-auto-rows: minmax(375px,auto);
 justify-content: center;

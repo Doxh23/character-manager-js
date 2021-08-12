@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,#4B4EA2 ,#E14444 );
+    background-size: cover;
+
+    
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0 100px;
+    margin-top: 30px;
+    font-family:'Permanent Marker', cursive;
+    font-size: 25px;
+
+}
+header input {
+    border-radius: 15px;
+    width: 300px;
+    font-size: 20px;
+    font-family:'roboto', cursive;
+    font-style: italic;
+    
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 20px;
+    opacity: 0.2;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 20px;
+    opacity: 0.2;
+
+
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 20px;
+    opacity: 0.2;
+
+
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 20px;
+    opacity: 0.2;
+
+}
+h2 {
+    color: whitesmoke;
+}
+hr {
+    display: flex;
+    margin-right:100px;
+    margin-left:100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    align-content: center;
+    color: white;
+    background: white;
+    height: 3px;
+    text-align: center;
+}
+.container {
+    display: grid;
+grid-template-columns: repeat(4,265px);
+grid-gap: 100px;
+grid-auto-rows: minmax(375px,auto);
+justify-content: center;
+font-style: italic;
+
+}
+.carte{
+    position: relative;
+    border: 1px solid #363333 ;
+    background:#363333  ;
+    border-radius: 30px;
+    padding: 15px 15px;
+   align-content: space-between;
+   padding-bottom:5px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.img-main{
+    text-align: center;
+}
+p{
+    display: inline-block;
+    color: whitesmoke;
+    opacity: 0.6;
+    font-family:'roboto', cursive;
+
+}
+h3{
+    color: whitesmoke;
+    opacity: 0.8;
+    font-family:'Permanent Marker', cursive;
+
+    
+}
+.carte button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: #363333;
+    border-radius: 13px;
+    font-family:'roboto', cursive;
+
+}
+
+/*----------------------FOOTER BUTTON----------------------------------------*/
+
+.footer-btn {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+footer button {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #4B7CFB ;
+    border: none;
+    color: white;
+    font-size: 20px;
+}

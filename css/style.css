@@ -119,6 +119,27 @@ h3{
 
 }
 
+a {
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    font-style: normal;
+    color: white;
+    text-decoration: none; 
+}
+a:hover {
+    font-style: normal;
+    color: white;
+    text-decoration: none; 
+}
+
 /*----------------------FOOTER BUTTON----------------------------------------*/
 
 .footer-btn {

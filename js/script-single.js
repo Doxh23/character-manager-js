@@ -38,7 +38,7 @@ console.log(queryString)
 }); 
 
 document.getElementById("update").addEventListener("click", () => {
-    let a = document.querySelector("a");
+    let a = document.querySelectorAll("a")[1];
     a.href = `/character-manager-js/pages/manager-character.html?${queryString}`;
     console.log(a.href);
 }); // à vérifier lors que le JS du manager page est réalisé

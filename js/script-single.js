@@ -1,8 +1,9 @@
 (async () => {
     //fetch the API
-    const response = await fetch(`https://character-database.becode.xyz/characters?id`);
+    const response = await fetch(`https://character-database.becode.xyz/characters#id`);
     const character = await response.json();
-    console.log(character);
+    
+    console.log(character.id);
 
     //show the key in the different tag
     let img = document.querySelector("img");

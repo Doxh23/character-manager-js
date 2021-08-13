@@ -9,9 +9,8 @@ body{
     background: linear-gradient(90deg, rgba(66, 67, 97, 0.9) 0%, rgba(225,68,68,0.95) 100%); 
     background-size: 200%;
     background-position: 50% 15% ;
-
-    
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -22,38 +21,39 @@ header {
     font-size: 25px;
 
 }
+
 header input {
     border-radius: 15px;
     width: 300px;
     font-size: 20px;
     font-family:'roboto', cursive;
     font-style: italic;
-    
 }
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     font-size: 20px;
     opacity: 0.2;
 }
+
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     font-size: 20px;
     opacity: 0.2;
-
-
 }
+
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     font-size: 20px;
     opacity: 0.2;
-
-
 }
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-size: 20px;
     opacity: 0.2;
-
 }
+
 h2 {
     color: whitesmoke;
 }
+
 hr {
     display: flex;
     margin-right:100px;
@@ -66,15 +66,16 @@ hr {
     height: 3px;
     text-align: center;
 }
+
 .container {
     display: grid;
-grid-template-columns: repeat(auto-fit,265px);
-grid-gap: 100px;
-grid-auto-rows: minmax(375px,auto);
-justify-content: center;
-font-style: italic;
-
+    grid-template-columns: repeat(auto-fit,265px);
+    grid-gap: 100px;
+    grid-auto-rows: minmax(375px,auto);
+    justify-content: center;
+    font-style: italic;
 }
+
 .carte{
     position: relative;
     border: 1px solid #363333 ;
@@ -84,29 +85,30 @@ font-style: italic;
    align-content: space-between;
    padding-bottom:5px;
 }
+
 img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-
 }
+
 .img-main{
     text-align: center;
 }
+
 p{
     display: inline-block;
     color: whitesmoke;
     opacity: 0.6;
     font-family:'roboto', cursive;
-
 }
+
 h3{
     color: whitesmoke;
     opacity: 0.8;
-    font-family:'Permanent Marker', cursive;
-
-    
+    font-family:'Permanent Marker', cursive;  
 }
+
 .carte button {
     position: absolute;
     bottom: 20px;
@@ -118,7 +120,6 @@ h3{
     background: #363333;
     border-radius: 13px;
     font-family:'roboto', cursive;
-
 }
 
 a {
@@ -126,16 +127,19 @@ a {
     color: white;
     text-decoration: none;
 }
+
 a:visited {
     font-style: normal;
     color: white;
     text-decoration: none;
 }
+
 a:active {
     font-style: normal;
     color: white;
     text-decoration: none; 
 }
+
 a:hover {
     font-style: normal;
     color: white;
@@ -149,6 +153,7 @@ a:hover {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+
 footer button {
     width: 450px;
     height: 40px;

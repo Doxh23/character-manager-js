@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded",async function(){
 
 
 let queryString = location.search.substring(1)
+console.log(queryString)
 
 console.log(queryString)
  character.forEach(obj => {

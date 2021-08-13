@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manager Character">
     <link rel="stylesheet" href="/character-manager-js/css/style-single.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Manager Character</title>
-
 </head>
+
 <body>
     <header>
-        <h1>CHARACTER MANAGER</h1>
+        <h1><a href="/character-manager-js/index.html">CHARACTER MANAGER<a></h1>
         <hr>
     </header>
 
     <main>
         <section class="manager">
             <div class="manager__img">
-                <img src="" alt="" placeholder="preview">
-                <input type="file" id="upload" placeholder="salut"></input>
+                <img src="" id="importid" alt="" placeholder="preview">
+                <input type="file" id="upload" onchange="imageUploaded()">
             </div>
+
             <div class="manager__input">
                 <input type="text" id="manager__name" maxlength="20"><p></p>
                 <input type="text" id="manager__preface" maxlength="70">
-                
                 <input type="text" id="manager__text" maxlength="350">
             </div>
+
             <div class="manager__btn">
                 <button id="update">Save changes</button>
                 <button id="delete">Delete character</button>
             </div>
         </section>
+
     </main>
+
     <script src="/character-manager-js/js/script-manager.js"></script>
+
 </body>
 </html>

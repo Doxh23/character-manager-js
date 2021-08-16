@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Manager Character">
+    <link href="/character-manager-js/css/favicon1.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="/character-manager-js/css/style-single.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +17,7 @@
 
 <body>
     <header>
-        <h1><a href="/character-manager-js/index.html">CHARACTER MANAGER<a></h1>
+        <h1><a href="/character-manager-js/index.html">CHARACTER MANAGER</a></h1>
         <hr>
     </header>
 
@@ -27,14 +29,28 @@
             </div>
 
             <div class="manager__input">
-                <input type="text" id="manager__name" maxlength="20"><p></p>
+                <input type="text" id="manager__name" maxlength="20">
                 <input type="text" id="manager__preface" maxlength="70">
-                <input type="text" id="manager__text" maxlength="350">
+                <div class="manager__marker">
+                    <ul>
+                        <li><i class="fas fa-bold"></i></li>
+                        <li><i class="fas fa-italic"></i></li>
+                        <li><i class="fas fa-underline"></i></li>
+                        <li><i class="fas fa-list-ul"></i></li>
+                        <li><i class="fas fa-list-ol"></i></li>
+                        <li><i class="fas fa-quote-left"></i></li>
+                        <li><i class="fas fa-align-left"></i></li>
+                        <li><i class="fas fa-align-center"></i></li>
+                        <li><i class="fas fa-align-right"></i></li>
+                        <li><i class="fas fa-align-justify"></i></li>
+                    </ul>
+                </div>
+                <textarea type="text" id="manager__text" maxlength="350"></textarea>
             </div>
 
             <div class="manager__btn">
-                <button id="update">Save changes</button>
-                <button id="delete">Delete character</button>
+                <button id="update"><a> Save changes</a> </button>
+                <button id="delete"><a>Delete character</a></button>
             </div>
         </section>
 

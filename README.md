@@ -13,7 +13,7 @@ This wasn't an issue. It was modified all along the project (to add some element
 ### 2. The CSS part:
 We have worked with some **lorem Ipsoum** cart to make the styling. After the grobal design was correct, we passed to the JS. When we have finished the JS and it worked fine, we made the details of the design (such as the countable character on the manager character page, the responsive part, etc.).
 
-### 3. the JS part: 
+### 3. The JS part: 
 The biggest part of this project was the JavaScript code. We prefer to separate the script in three (one for each page). 
 
 Adrien worked on the main page JS:
@@ -35,9 +35,10 @@ We've worked together:
 * The way to upload/to add a picture;
 * The way to add a character;
 * The way to update a character;
+* The character counting;
 * The "Save" button;
 * The "Delete" button.
 
 The link to our page :
 -----------------------
-[Click here to see our WebSite] (https://doxh23.github.io/character-manager-js/)
+[Click here to see our WebSite](https://doxh23.github.io/character-manager-js/)

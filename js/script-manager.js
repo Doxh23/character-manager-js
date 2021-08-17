@@ -26,7 +26,7 @@
             
             let name = document.getElementById("manager__name").value
             let shortDescription = document.getElementById("manager__preface").value
-            let description = document.getElementById("manager__text").children[0].textContent
+            let description = document.getElementById("manager__text").children[0].innerHTML
         
             if(confirm(`Do you want to add this character?`)){
                 await fetch(`https://character-database.becode.xyz/characters/${queryString}`, {
@@ -56,13 +56,13 @@
         img.src = `data:image/png;base64, ${find.image}`;
         document.getElementById("manager__name").value = find.name;
         document.getElementById("manager__preface").value = find.shortDescription;
-        document.querySelector("#manager__text").children[0].textContent = find.description;
+        document.querySelector("#manager__text").children[0].innerHTML = find.description;
         // console.log(document.querySelector("p").value)
         
         document.getElementById("update").addEventListener("click", async () => {
             let name = document.getElementById("manager__name").value
             let shortDescription = document.getElementById("manager__preface").value
-            let description = document.getElementById("manager__text").children[0].textContent
+            let description = document.getElementById("manager__text").children[0].innerHTML
  //******************************************if we don't have a image******************************************************************* */
             if (image.length ===  0){
                 if(confirm(`Do you want to change this character ?`)){
@@ -121,9 +121,6 @@
             alert(`This character isn't delete of your API`);
         }
     }); 
- document.getElementById("counter__name").innerText = `${document.getElementById("manager__name").value.length}  on max 20 char.`;
-//  document.getElementById("counter__preface").innerText = `${document.getElementById("manager__preface").value.length} on max 70 char.`;
-//  document.getElementById("counter__text").innerText = `${document.getElementById("manager__text").value.length} on max 350 char.` ;
     // Count of charcater for the Name 
     document.getElementById("manager__name").addEventListener("input", () => {
         const a = document.getElementById("manager__name").value;

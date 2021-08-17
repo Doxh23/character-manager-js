@@ -19,13 +19,14 @@
     let find = character.find(el => el.id === queryString)
 
     //**************POST + DELETE **********************************/
+    ////////*************************************if we don't have an id for the character************************ */
     if (typeof find === "undefined") {
         console.log("f")
         document.getElementById("update").addEventListener("click", async () => {
             
             let name = document.getElementById("manager__name").value
             let shortDescription = document.getElementById("manager__preface").value
-            let description = document.getElementById("manager__text").value
+            let description = document.getElementById("manager__text").children[0].textContent
         
             if(confirm(`Do you want to add this character?`)){
                 await fetch(`https://character-database.becode.xyz/characters/${queryString}`, {
@@ -49,20 +50,20 @@
     }
 
     //************************PUT + DELETE *************************************/
+    //**************************if we got an id for the character */
     if (queryString === find.id){
         let img = document.querySelector("img");
         img.src = `data:image/png;base64, ${find.image}`;
-        img.alt = `picture of ${find.name}`;
-
         document.getElementById("manager__name").value = find.name;
         document.getElementById("manager__preface").value = find.shortDescription;
-        document.getElementById("manager__text").value = find.description;
+        document.querySelector("#manager__text").children[0].textContent = find.description;
+        // console.log(document.querySelector("p").value)
         
         document.getElementById("update").addEventListener("click", async () => {
             let name = document.getElementById("manager__name").value
             let shortDescription = document.getElementById("manager__preface").value
-            let description = document.getElementById("manager__text").value
-            
+            let description = document.getElementById("manager__text").children[0].textContent
+ //******************************************if we don't have a image******************************************************************* */
             if (image.length ===  0){
                 if(confirm(`Do you want to change this character ?`)){
                     await fetch(`https://character-database.becode.xyz/characters/${queryString}`, {
@@ -82,7 +83,9 @@
                 else{
                     alert("your character hasn't been modify!")
                 }
-            }else {
+            }
+//***********************************************************if we have an image********************************************************************* */
+            else {
                 if(confirm(`Do you want to change this character ?`)){
                     await fetch(`https://character-database.becode.xyz/characters/${queryString}`, {
                         method: 'PUT',
@@ -118,31 +121,42 @@
             alert(`This character isn't delete of your API`);
         }
     }); 
+ document.getElementById("counter__name").innerText = `${document.getElementById("manager__name").value.length}  on max 20 char.`;
+//  document.getElementById("counter__preface").innerText = `${document.getElementById("manager__preface").value.length} on max 70 char.`;
+//  document.getElementById("counter__text").innerText = `${document.getElementById("manager__text").value.length} on max 350 char.` ;
+    // Count of charcater for the Name 
+    document.getElementById("manager__name").addEventListener("input", () => {
+        const a = document.getElementById("manager__name").value;
+        console.log(a);
 
+        let b = a.length;
+        console.log(b);
     
+        const c = document.getElementById("counter__name").innerText = `${b}  on max 20 char.`;
 
-        
+    });
+    // Count of charcater for the Preface 
+    document.getElementById("manager__preface").addEventListener("input", () => {
+        const a = document.getElementById("manager__preface").value;
+        console.log(a);
 
- // input en markdown
- // permet d'écrire en markdown
- // dans la DB en markdown 
- // lors de la sauvegarde, tranforme en html pour la single page
-
-    /*******Markdown in JavaScript********* */
-    const markdownParser = (text) => {
-        const toHTML = text
-            .replace(/^### (.*$)/gim, '<h3>$1</h3>') // h3 tag
-            .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
-            .replace(/^# (.*$)/gim, '<h1>$1</h1>') // h1 tag
-            .replace(/\*\*(.*)\*\*/gim, '<b>$1</b>') // bold text
-            .replace(/\*(.*)\*/gim, '<i>$1</i>'); // italic text
-        return toHTML.trim(); // using trim method to remove whitespace
-    }
+        let b = a.length;
+        console.log(b);
     
+        const c = document.getElementById("counter__preface").innerText = `${b} + on max 70 char.`;
 
+    });
+    // Count of charcater for the Text
+    document.getElementById("manager__text").addEventListener("input", () => {
+        const a = document.querySelector("p").childNodes[0];
+        console.log(a);
 
+        let b = a.length;
+        console.log(b);
+    
+        document.getElementById("counter__text").innerText = `${b}  on max 350 char.`;
 
-
+    });
  
 
 

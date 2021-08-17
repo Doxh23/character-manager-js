@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Manager Character">
     <link href="/character-manager-js/css/favicon1.ico" rel="icon" type="image/x-icon" />
+    <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.core.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="/character-manager-js/css/style-single.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,27 +27,17 @@
         <section class="manager">
             <div class="manager__img">
                 <img src="" id="importid" alt="" placeholder="preview">
-                <input type="file" id="upload" onchange="imageUploaded()">
+                <label for="upload">upload Image</label>
+                <input type="file" name="upload"id="upload" accept=".jpg, .jpeg, .png" onchange="imageUploaded()">
             </div>
 
             <div class="manager__input">
                 <input type="text" id="manager__name" maxlength="20">
+                <span id="counter__name" class="indicator"> 0 on max 20 char.</span>
                 <input type="text" id="manager__preface" maxlength="70">
-                <div class="manager__marker">
-                    <ul>
-                        <li><i class="fas fa-bold"></i></li>
-                        <li><i class="fas fa-italic"></i></li>
-                        <li><i class="fas fa-underline"></i></li>
-                        <li><i class="fas fa-list-ul"></i></li>
-                        <li><i class="fas fa-list-ol"></i></li>
-                        <li><i class="fas fa-quote-left"></i></li>
-                        <li><i class="fas fa-align-left"></i></li>
-                        <li><i class="fas fa-align-center"></i></li>
-                        <li><i class="fas fa-align-right"></i></li>
-                        <li><i class="fas fa-align-justify"></i></li>
-                    </ul>
-                </div>
-                <textarea type="text" id="manager__text" maxlength="350"></textarea>
+                <span id="counter__preface" class="indicator"> 0 on max 20 char.</span>
+                <div type="text" id="manager__text" maxlength="350"></div>
+                <span id="counter__text" class="indicator"> 0 on max 20 char.</span>
             </div>
 
             <div class="manager__btn">
@@ -57,6 +49,12 @@
     </main>
 
     <script src="/character-manager-js/js/script-manager.js"></script>
+    <script src="https://cdn.quilljs.com/1.0.0/quill.js"></script>
+    <script>
+        var editor = new Quill('#manager__text', {
+          theme: 'snow'
+        });
+      </script>
 
 </body>
 </html>

@@ -24,7 +24,7 @@ Adrien worked on the main page JS:
 
 Stephanie worked on the single character page: 
 * Fetch the DataBase;
-* filling the HTML elements with the data of the character;
+* Filling the HTML elements with the data of the character;
 * The "Update" button;
 * The "Delete" button.
 
@@ -32,8 +32,12 @@ The little modification of these two pages was made in a team effort.
 
 For the last page (the manager character page), we have chosen to make all the JS on the same script.js. To update and to add a character in the DataBase, the JS script is in the same file
 We've worked together:
-*   The way to upload/to add a picture;
+* The way to upload/to add a picture;
 * The way to add a character;
 * The way to update a character;
 * The "Save" button;
 * The "Delete" button.
+
+The link to our page :
+-----------------------
+[Click here to see our WebSite] (https://doxh23.github.io/character-manager-js/)

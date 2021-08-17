@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(75,78,162);
+    background: linear-gradient(90deg, rgba(66, 67, 97, 1) 5%, rgba(225,68,68,1) 95%); 
+    background-size: 150%;
+    background-position: 75% 25% ;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0 100px;
+    margin-top: 30px;
+    font-family:'Permanent Marker', cursive;
+    font-size: 25px;
+
+}
+.header-div {
+    display: flex;
+align-items: center;
+} 
+header input {
+    border-radius: 15px;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-family:'roboto', sans-serif;
+    font-style: italic;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 20px;
+    opacity: 0.2;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 20px;
+    opacity: 0.2;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 20px;
+    opacity: 0.2;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 20px;
+    opacity: 0.2;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+hr {
+    display: flex;
+    margin-right:100px;
+    margin-left:100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    align-content: center;
+    color: white;
+    background: white;
+    height: 3px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,265px);
+    grid-gap: 100px;
+    grid-auto-rows: minmax(375px,auto);
+    justify-content: center;
+    font-style: italic;
+}
+
+.carte{
+
+    width: 100%;
+    position: relative;
+    border: 1px solid #363333 ;
+    background:#363333  ;
+    border-radius: 30px;
+    padding: 15px 15px;
+   padding-bottom:5px;
+   transition: width 0.5s ease-out, heigth 0.5 ease-out ;
+}
+.carte:hover {
+    width: 110%;
+    height: 110%;
+
+}
+.carte:hover img {
+    width: 125px;
+    height: 125px;
+
+}
+.carte:hover h3 {
+    font-size: 22px;
+}
+.carte:hover p {
+    font-size: 17px;
+}
+.carte:hover a {
+    font-size: 15px
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.img-main{
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+    color: whitesmoke;
+    opacity: 0.6;
+    font-family:'roboto', sans-serif;
+}
+
+h3{
+    color: whitesmoke;
+    opacity: 0.8;
+    font-family:'Permanent Marker', cursive;  
+}
+
+/* .carte button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: #363333;
+    border-radius: 13px;
+    font-family:'roboto', sans-serif;
+    transition: background 0.5s ease-out; 
+} */
+.carte button:hover  {
+    font-style: normal;
+    background: white;
+    text-decoration: none;
+    
+}
+
+a {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+    width: 110px;
+    height: 30px;
+    color: white;
+    background-color: #363333;
+    border-radius: 13px;
+    font-family:'roboto', sans-serif;
+    transition: background-color 0.5s ease-out;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    padding-left: 6px;
+    
+}
+
+
+
+a:hover {
+    color:#363333 ;
+    background-color: white;
+
+}
+
+
+/*----------------------FOOTER BUTTON----------------------------------------*/
+
+.footer-btn {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+footer button {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #4B7CFB ;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and  (  max-width: 700px) and (  min-width: 500px){
+footer button{
+    font-size: 15px;
+    width: 300px;
+}
+header h2{
+font-size: 20px;
+}
+header input {
+    width: 12.5rem;
+    height: 2.5rem;
+}
+}
+@media screen and  (  max-width: 499px){  
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer button{
+        font-size: 15px;
+        width: 300px;
+    }
+.header-div {
+text-align: center;
+}
+}
+@media screen and  (  max-width: 350px){  
+   header {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    footer button{
+        font-size: 15px;
+        width: 300px;
+    }
+    header input {
+        width: 15rem;
+        height: 2.5rem;
+    }
+    .header-div {
+        text-align: center;
+        }
+
+}

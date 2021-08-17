@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background: rgb(75,78,162);
+    background: linear-gradient(90deg, rgba(66, 67, 97, 1) 5%, rgba(225,68,68,1) 95%); 
+    background-size: 150%;
+    background-position: 75% 25% ;
+}
+header{
+    margin: 2.5rem 3rem 2rem 3rem;
+    color: white;
+    font-family:'Permanent Marker', cursive;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+hr{
+    margin: 0.5rem;
+    color: white;
+}
+
+/* Single Character css*/
+.single__character{
+    margin: 2rem 3.1rem 5rem 3.1rem;
+    background-color: #363333;
+    border-radius: 10px;
+    display: flexbox;
+}
+.single__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    padding-top: 4rem;
+}
+img{
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    object-position: center;
+} /* works also for the img in the manager character page*/
+#single__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family:'Permanent Marker', cursive;
+    color: white;
+}
+#single__preface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1rem 1rem 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1rem;
+    opacity: 60%;
+
+}
+#single__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    opacity: 75%;
+}
+/*End of single Character CSS*/
+
+/*Manager character CSS*/
+.manager{
+    margin: 2rem 3.1rem 5rem 3.1rem;
+    background-color: #363333;
+    border-radius: 10px;
+}
+.manager__img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    padding-top: 4rem;
+}
+.manager__img img, button{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+#upload{
+    max-width: 7.2rem;
+    margin: auto;
+    padding-top: 0.5rem;
+    border: none;
+    /* background-color: #363333; */
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+}
+.manager__input{
+    display: flex;
+    flex-direction: column;
+}
+#manager__name, #manager__preface, #manager__text{
+    margin: 0.3rem 2rem 0.3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    color: white;
+}
+#manager__name{
+    padding: 0.5rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+}
+#manager__preface{
+    padding: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.manager__marker{  
+    margin: 0.3rem 2rem 0.3rem 2rem; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid white;
+    border-radius: 15px; 
+}
+ul{
+    /* padding: 1rem; */
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;  
+    flex-direction: row;
+    width: 21.5rem;
+}
+li{
+    list-style-type:none;
+    margin: 0.5rem;
+}
+i{
+    color:#363333 ;
+    font-size: 1.3rem
+}
+textarea{
+    text-align: left;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    height: 10rem;
+}
+#importid {
+    border: 2px solid white;
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width: 500px){
+    #manager__text{
+        padding: 5rem auto 5rem auto;
+    }
+}
+/*End of Manager character CSS */
+
+/* CSS btn delete and update/save*/
+.single__btn, .manager__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+#update{
+    margin: 1.5rem ;
+    padding: 1rem 1rem 1rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #4B7CFB;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    transition: background 0.5s ease-out,color 0.5s ease-out, font-weight 0.5s ease-out;
+    /* box-sizing: 7rem; */
+}
+#update:hover { 
+    background: white;
+    color: #4B7CFB;
+}
+#update a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+}
+#update:hover a{ 
+    color: #4B7CFB;
+    font-weight: 600;
+}
+#delete{
+    margin:1rem 1rem 1rem 0rem;
+    padding: 1rem;
+    background-color: #363333;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #BF3A30;
+    color: #BF3A30;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    transition: background 0.5s ease-out,color 0.5s ease-out,font-weight 0.5s ease-out,border-color 0.5s ease-out;
+    /* box-sizing: 7rem; */
+}
+#delete:hover { 
+    background: #BF3A30;
+    color: #363333;
+}
+#delete a {
+    color: #BF3A30;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+}
+#delete:hover a{ 
+    color: #363333;
+    font-weight: 900;
+}
+@media screen and (max-width:470px){
+    .single__btn, .manager__btn{
+        flex-direction: column;
+        /* margin: 2.5rem; */
+        padding-bottom: 3rem;
+    }
+    #update{
+        margin: 1rem 1.5rem 0.5rem 1.5rem;
+    }
+    #delete{
+        margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+    }
+}
